@@ -68,7 +68,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
         busStopNum = "75239"; //Default fallback bus stop number
     }
 
-})
+} 
 
 request({headers: {'AccountKey': ltaApiKey}, 
 uri:busUrl+"BusStopID="+busStopNum+"&ServiceNo="+busNum}, function(error, response, body){ 
@@ -158,7 +158,7 @@ if(service != null){
     } else { session.send("Bus "+busNum+" does not call at bus stop "+busStopNum+". Please check your details and try again."); 
 } 
 
-console.log(body); 
+    console.log(body); 
 
    }); 
 })
