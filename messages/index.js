@@ -49,7 +49,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
 
 .matches('Conversation.Greeting',(session, args) => {
     var rand = Math.floor(Math.random() * (generalReplies.length));
-    session.send(generalReplies[rand]);
+    session.send(generalReplies[0]);
 })
 
 .matches('BusTiming.NextBus',(session, args) => {
