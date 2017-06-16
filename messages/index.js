@@ -164,10 +164,10 @@ if(service != null){
 /*
 .matches('<yourIntent>')... See details at http://docs.botframework.com/builder/node/guides/understanding-natural-language/
 */
-/*.onDefault((session) => {
+.onDefault((session) => {
     session.send('Sorry, I did not understand \'%s\'.', session.message.text);
 });
-*/
+
 bot.dialog('/', intents);    
 
 if (useEmulator) {
