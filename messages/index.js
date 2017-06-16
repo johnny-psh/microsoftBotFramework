@@ -68,7 +68,6 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
         busStopNum = "75239"; //Default fallback bus stop number
     }
 
-} 
 
 request({headers: {'AccountKey': ltaApiKey}, 
 uri:busUrl+"BusStopID="+busStopNum+"&ServiceNo="+busNum}, function(error, response, body){ 
