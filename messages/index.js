@@ -68,7 +68,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
         busStopNum = "75239"; //Default fallback bus stop number
     }
 
-}
+})
 
 request({headers: {'AccountKey': ltaApiKey}, 
 uri:busUrl+"BusStopID="+busStopNum+"&ServiceNo="+busNum}, function(error, response, body){ 
@@ -78,7 +78,7 @@ uri:busUrl+"BusStopID="+busStopNum+"&ServiceNo="+busNum}, function(error, respon
      
     if(response.statusCode !== 200){ 
          return console.log('Invalid Status Code Returned:', response.statusCode); 
-        } 
+    } 
 
 
     var obj = JSON.parse(body); 
@@ -159,6 +159,7 @@ if(service != null){
 } 
 
 console.log(body); 
+
    }); 
 })
 /*
