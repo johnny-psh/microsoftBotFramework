@@ -25,7 +25,7 @@ const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v1/application?id=' +
 
 //Api for singapore bus timings
 var busUrl = "http://datamall2.mytransport.sg/ltaodataservice/BusArrival?";
-var ltaApiKey = "nUJvo1bUMU3WF/5dTmcHCw==";
+var ltaApiKey = "yaa/bnqhRlyVpkQkNnurGg==";
 
 var generalReplies = [
     "Hello to you too!\nHow may I help you today?",
